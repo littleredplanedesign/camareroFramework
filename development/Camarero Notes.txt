@@ -1,0 +1,121 @@
+STYLING/STANDARDS----------------------------------------------------------------------------
+  https://github.com/stubbornella/oocss-code-standards
+  https://github.com/stubbornella/oocss-accessibility-guidelines
+    With the Drupal 2 space indent caveat.
+
+At the top of each CSS/SASS File...
+
+/**
+* @desc         Description of the file.
+* @name         Simple name for the file (i.e., Search_Widget)
+* @author       username
+* @tested       browsers
+* @requires     helpers.css (tied to the @name of another file)
+*/
+
+COMMENT STYLING-------------------------------------------------------------------------------
+
+/* =======================================================================
+  Section Block
+  =======================================================================  */
+
+/* Sub-section block
+  =======================================================================  */
+
+Comments may deviate for Kalei Style Guide...
+http://kaleistyleguide.com/
+
+/*
+
+# Markdown Heading
+## Markdown Heading
+Just type for basic text...
+
+'''
+<Code Snippet Here>
+'''
+
+Filler Content
+class=fixie
+
+*/
+
+We'd like to mimic the SMACCS approach.
+Base
+  Resets
+Layout
+  Grids
+  Fixed
+  Media Queries
+Elements
+  Framework Components
+    Form
+    Code
+    Tables
+    Buttons
+    Img
+Module
+  Site Specific Modules
+Menus
+  For Drupal Considerations
+State
+  Explanatory...
+Theme
+  Branded Items
+    Color
+    Imagery
+    Typeface Changes
+
+
+
+Development Folder
+scss
+  _modules - Mixins, Functions, Configs
+    _layoutStructure
+    _layoutMediaQuery
+    _configLayout
+  _partials
+    _variables
+    _base
+      @I compass
+      @I variables
+      @I modules
+
+To build a layout, I will need layout math functions, configurables, media queries...
+I want this to be modularized if needed alone, or not needed at all.
+I want the media queries to be built on demand if needed, imported into the main sheet for now, but build singularly for device detection later.
+
+We may want to move the config file after working with this a bit.
+
+What makes sense here...
+
+Layout Module Contains
+  functions
+  configs - if/then pull in...
+    Fixed
+    Fluid
+      Queries
+      Columns
+      Gutters
+      Breakpoints
+  mixins
+
+
+
+
+
+Grunt Tasks...
+
+Grunt Develop
+    Grunt Watch
+      HTML/JS/CSS/SASS
+    Nd import path set.
+    Nd output method set.
+    Live Reload
+
+Grunt Produce
+  Nd to remove comments from CSS.
+  Minify CSS
+  Concatenate CSS
+  Move CSS
+

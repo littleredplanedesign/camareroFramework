@@ -119,3 +119,23 @@ Grunt Produce
   Concatenate CSS
   Move CSS
 
+
+
+
+
+Classes.....
+
+wrapper - Fixed/Fluid with Use like BS. For basic grid setup.
+  row
+    col-xs
+    col-sm
+    col-md
+    col-lg
+      Column Ordering
+      push - By a num of columns
+      pull - By a num of columns
+      
+      Basic Offset
+      offset - By a num of columns
+I'm not worried about margins right now.
+Just get the basic grid laid out, mobile first.

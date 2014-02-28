@@ -1,0 +1,13 @@
+@import "compass";
+@import "../layoutVariables";
+
+.wrapper {
+	padding:0 $defaultHorizontalPadding + px;
+	.row {
+	margin:0 -15px;
+	}
+	.col {
+		@include clearfix;
+		padding:$defaultVerticalPadding + px $defaultHorizontalPadding + px; 
+	}
+} 

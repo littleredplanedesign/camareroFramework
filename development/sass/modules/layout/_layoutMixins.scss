@@ -1,1 +1,11 @@
-$SassLayoutMixinFile:"commentOut";
+@import "layoutVariables";
+@import "layoutFunctions";
+
+// 768 992 1200
+// wrapper > row > col md-#
+
+@mixin defaultSmallLayout{
+	.wrapper{
+		padding:$defaultHorizontalPadding + px $defaultVerticalPadding + px;
+	}
+}

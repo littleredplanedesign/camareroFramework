@@ -1,6 +1,6 @@
 @import "layoutVariables";
 @import "layoutFunctions";
-
+@import "layoutConfig";
 // 768 992 1200
 // wrapper > row > col md-#
 
@@ -8,4 +8,25 @@
 	.wrapper{
 		padding:$defaultHorizontalPadding + px $defaultVerticalPadding + px;
 	}
+}
+
+@mixin layoutColumnGen{
+    $i: 1;
+    @while $i <= $layoutColumnCount {
+        .md-#{$i}{
+          width:percentage($i/$layoutColumnCount);
+        }
+        $i: $i + 1;
+    }
+}
+
+@mixin layoutNestedRows{
+   @if $layoutNestedRows == true{
+     .row .row{
+    margin-bottom:0;
+   }
+   .col .col{
+    padding:0;
+    }
+  }
 }

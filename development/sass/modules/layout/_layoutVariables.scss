@@ -2,10 +2,24 @@
 // Spacing
 
 $defaultHorizontalPadding:15 !default;
+$defaultHorizontalPaddingTotal:$defaultHorizontalPadding * 2;
+
 $defaultVerticalPadding:10 !default;
+
+// Media Query Helpers
+
+$screen:"screen";
+
+$min-width:"min-width";
+$min-device-width:"min-device-width";
 
 // MEDIA QUERY MIN BREAKS
 
 $smallDefaultMajor:768 !default;
 $mediumDefaultMajor:992 !default;
 $largeDefaultMajor:1200 !default;
+
+// Default mixin variables
+
+$layoutColumnCount:12 !default;
+$layoutNestedRows:true !default;

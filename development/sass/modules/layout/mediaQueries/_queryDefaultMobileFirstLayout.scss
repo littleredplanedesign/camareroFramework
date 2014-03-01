@@ -1,13 +1,26 @@
 @import "compass";
 @import "../layoutVariables";
+@import "../layoutMixins";
+
+// Config layout setup
+
+
+*,
+*:before,
+*:after {
+  webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
 
 .wrapper {
 	padding:0 $defaultHorizontalPadding + px;
+        margin:0 auto;
 	.row {
-	margin:0 -15px;
+          ;
 	}
 	.col {
 		@include clearfix;
-		padding:$defaultVerticalPadding + px $defaultHorizontalPadding + px; 
+		padding:$defaultVerticalPadding + px $defaultHorizontalPadding + px;
 	}
-} 
+  @include layoutNestedRows
+}

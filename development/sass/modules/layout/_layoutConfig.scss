@@ -1,1 +1,5 @@
-_layoutConfig.scss
+$layoutColumnCount:12;
+// 12 as default, accepts number no strings
+
+$layoutNestedRows: true;
+//true as default, accepts a boolean

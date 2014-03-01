@@ -1,0 +1,19 @@
+@import "../layoutVariables";
+@import "../layoutMixins";
+//$screen:"screen";
+//$min-width:"min-width";
+//$min-device-width:"min-device-width";
+
+@media  only #{$screen} and ($min-width:$smallDefaultMajor + px){
+  .wrapper{
+    width:100%;
+      .row{
+        @include clearfix;
+        width:100%;
+      }
+      .col{
+        float:left;
+      }
+  @include layoutColumnGen;
+  }
+}

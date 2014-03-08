@@ -1,1 +1,11 @@
 @import "layoutVariables";
+
+@mixin layoutColumnGen {
+    $i: 1;
+    @while $i <= $layoutColumnCount {
+        .md-#{$i}{
+          width:percentage($i/$layoutColumnCount);
+        }
+        $i: $i + 1;
+    }
+}

@@ -70,10 +70,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     overflow: hidden;
     *zoom: 1;
     padding: 10px 15px; }
-  /* line 24, ../sass/modules/layout/_layoutMixins.scss */
+  /* line 41, ../sass/modules/layout/_layoutMixins.scss */
   .wrapper .row .row {
     margin-bottom: 0; }
-  /* line 27, ../sass/modules/layout/_layoutMixins.scss */
+  /* line 44, ../sass/modules/layout/_layoutMixins.scss */
   .wrapper .col .col {
     padding: 0; }
 
@@ -124,7 +124,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       width: 91.66667%; }
     /* line 16, ../sass/modules/layout/_layoutMixins.scss */
     .wrapper .md-12 {
-      width: 100%; } }
+      width: 100%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-1 {
+      margin-left: 8.33333%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-2 {
+      margin-left: 16.66667%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-3 {
+      margin-left: 25%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-4 {
+      margin-left: 33.33333%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-5 {
+      margin-left: 41.66667%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-6 {
+      margin-left: 50%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-7 {
+      margin-left: 58.33333%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-8 {
+      margin-left: 66.66667%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-9 {
+      margin-left: 75%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-10 {
+      margin-left: 83.33333%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-11 {
+      margin-left: 91.66667%; }
+    /* line 31, ../sass/modules/layout/_layoutMixins.scss */
+    .wrapper .md-offset-12 {
+      margin-left: 100%; } }
 /* line 5, ../sass/styles.scss */
 body {
   background: none blue; }

@@ -134,7 +134,7 @@ wrapper - Fixed/Fluid with Use like BS. For basic grid setup.
       Column Ordering
       push - By a num of columns
       pull - By a num of columns
-      
+
       Basic Offset
       offset - By a num of columns
 I'm not worried about margins right now.

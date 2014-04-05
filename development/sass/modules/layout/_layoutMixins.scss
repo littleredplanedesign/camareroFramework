@@ -1,5 +1,5 @@
 @import "layoutVariables";
-@import "layoutFunctions";
+//@import "layoutFunctions";
 @import "layoutConfig";
 // 768 992 1200
 // wrapper > row > col md-#
@@ -10,7 +10,11 @@
 	}
 }
 
-@mixin layoutColumnGen{
+//Use border box.
+//Use the polyfill behavior file for IE7.
+//These worked for IE6 issues too.
+//The goal here is to make a modern framework, not agonize over attempting perfection of a past model.
+@mixin layoutColumnGen {
     $i: 1;
     @while $i <= $layoutColumnCount {
         .md-#{$i}{
@@ -18,10 +22,6 @@
         }
         $i: $i + 1;
     }
-}
-
-@function myWidth($myAttribute){
-  @return quote($myAttribute);
 }
 
 @mixin layoutOffsetUnits {

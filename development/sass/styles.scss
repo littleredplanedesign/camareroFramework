@@ -3,7 +3,7 @@
 
 
 body{
-	background:none blue;
+	background:none red;
 }
 
 .gridBasicDemo {
@@ -11,6 +11,12 @@ body{
 	margin-bottom:10px;
 	}
 	.col{
-		background:none #ccc;
+		background:none #fff;
 	}
 }
+
+//LAYOUT HELPER - DEV ONLY
+.col:nth-child(odd) {
+  background: none #ccc;
+}
+

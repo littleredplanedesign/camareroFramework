@@ -1,0 +1,11 @@
+@import "../layoutVariables";
+@import "../layoutMixins";
+//$screen:"screen";
+//$min-width:"min-width";
+//$min-device-width:"min-device-width";
+
+@media  only #{$screen} and ($min-width:$largeDefaultMajor + px){
+  .wrapper{
+    width:$largeDefaultMajor + px;
+  }
+}

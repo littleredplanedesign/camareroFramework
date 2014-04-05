@@ -6,15 +6,13 @@
 
 @media  only #{$screen} and ($min-width:$smallDefaultMajor + px){
   .wrapper{
-    width:100%;
+    width:$smallDefaultMajor + px;
       .row{
         @include clearfix;
-        width:100%;
       }
       .col{
         float:left;
       }
   @include layoutColumnGen;
-  @include layoutOffsetUnits;
   }
 }
